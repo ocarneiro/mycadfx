@@ -11,9 +11,15 @@
    <children>
       <SplitPane dividerPositions="0.873995983935743" layoutX="-1.0" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0">
         <items>
-          <StackPane><Canvas fx:id="mainCanvas" width="800" height="600"></Canvas></StackPane>
           <StackPane>
-                  <TextArea prefWidth="Infinity" promptText="Type commands here" onKeyReleased="#onKeyReleased" />
+              <Canvas fx:id="mainCanvas"
+                      width="800" height="600"
+                      onMouseMoved="#onMouseMoved"
+              ></Canvas>
+          </StackPane>
+          <StackPane>
+              <TextArea prefWidth="Infinity" promptText="Type commands here"
+                        onKeyReleased="#onKeyReleased" />
           </StackPane>
         </items>
       </SplitPane>
